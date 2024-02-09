@@ -184,7 +184,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop\manifest'
+        artifactName: 'drop/manifest'
         downloadPath: '$(System.ArtifactsDirectory)'
 
     - task: Kubernetes@1
@@ -229,7 +229,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop\helm_chart'
+        artifactName: 'drop/helm_chart'
         downloadPath: '$(System.ArtifactsDirectory)'
 
     # - task: HelmDeploy@0
@@ -295,7 +295,7 @@ stages:
       inputs:
         buildType: 'current'
         downloadType: 'single'
-        artifactName: 'drop\helm_chart'
+        artifactName: 'drop/helm_chart'
         downloadPath: '$(System.ArtifactsDirectory)'
 
     - task: AzureCLI@2
